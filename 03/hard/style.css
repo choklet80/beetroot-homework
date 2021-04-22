@@ -6,8 +6,12 @@ a{
     text-decoration: none;
     color: white;
     font-size: 30px;
+}
+
+a:hover{
     border-bottom: 1px solid white;
 }
+
 li{
     list-style-type: none;
     margin-bottom: 40px;
