@@ -1,0 +1,50 @@
+
+body{
+    background-color: #ee6c4d;
+}
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+.container div{
+    display: inline-block;
+    margin: 5px;
+}
+.container div img{
+    width: 150px;
+    height: 100px;
+}
+.top-un{
+    font-weight: bold;
+    color: #ee6c4d;
+    text-align: center;
+    background-color: #293241;
+}
+
+.center{
+    text-align: center;
+}
+
+.sunset-size{
+    width: 1200px;
+    height: 250px;
+}
+.footer{
+    
+    background-color: #293241;
+    color: #ee6c4d;
+    text-align: center;
+    font-size: 20px;
+    position: absolute; /* Фиксированное положение */
+    right: 0px; bottom: 20px; /* Левый нижний угол */
+    width: 100%; /* Ширина слоя */
+}

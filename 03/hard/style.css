@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    border-bottom: 1px solid white;
+}
+li{
+    list-style-type: none;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #990909;
+}
+
+.title{
+    text-align: center;
+}
+nav{
+    padding-bottom: 20px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav div{
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+nav div img{
+    margin: 50px;
+    margin-bottom: 30px;
+    width: 280px;
+}
+.left_info a{
+    color: #D85B0E;
+}
+.left_info{
+    padding: 5px;
+    background-color: black;
+    max-width: 320px;
+    width: 100%;
+    height: 430px;
+    margin: 10px;
+    float: left;
+}
+
+.middle_info{
+    margin: 10px;
+    color: blanchedalmond;
+    font-size: 20px;
+    max-width: 1100px;
+    justify-content: center;
+}
+
+.right_info_div{
+    text-align: center;
+    float: right;
+    width: 320px;
+    height: 430px;
+    border: solid black 1px;
+    background-color: white;
+}
+.right_info{
+    max-width: 320px;
+    width: 100%;
+    height: 430px;
+    margin: 10px;
+    justify-content:right;
+}
+
+hr{
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.in_Table_text{
+    text-align: left; 
+    padding: 10px; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    max-width: 100%;
+    max-height: 50px;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
