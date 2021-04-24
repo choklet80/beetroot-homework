@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.navigation__link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-decoration-line: none;
+    color: #000000;
+    padding-left: 27.5px;
+    transition: all 0.5s;
+}
+
+.navigation__link:hover{
+    color:#ff0048;
+}
+
+.head{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding: 50px 74px 0;
+    display: flex;
+    justify-content: space-between;
+}   
+
+.main{
+    min-height: 100vh;
+    background-image: url("../img/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.home-card__head__h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+
+    color: #FFFFFF;
+}
+
+.home-card__control{
+    padding: 35px 0 74px 74px;
+    display: flex;
+    align-items: center;
+    width: 461px;
+    justify-content: space-between;
+}
+
+.home-card__control__zapis{
+    width: 260px;
+    height: 50px;
+    background: #eea35c;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: all 0.4s;
+    
+}
+.home-card__control__zapis > a{
+    text-decoration: none;
+    color: white;
+}
+
+.home-card__control__zapis:hover{
+    background-color: #ce7828;
+}
+.home-card__control__zapis:active{
+    background-color: #f3b57b;
+}      
+
+.home-card__control__info{
+    color: white;
+    text-decoration-line: underline;
+}
+
+.home-card__body{
+    padding: 0 0 0 74px;
+    display: flex;
+    width: 289px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.home-card__body__right__p{
+    font-weight: bold;
+}
+
+.home-card__body__left__p{
+    opacity: 0.6;
+}
+
+.home-card{
+    max-width: 600px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.home-card__body__right{
+    line-height: 34px;
+}
+
+.home-card__body__left{
+    line-height: 34px;
+}
+
+.home-card__head{
+    padding-left: 74px;;
+}

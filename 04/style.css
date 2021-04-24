@@ -1,3 +1,50 @@
+*{
+    padding: 0;
+    margin: 0px;
+}
 body{
     background-color: #121116;
+    color: white;
+}
+
+.body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon{
+    padding-top: 20px;
+   padding-left: 20px;
+    width: 30px;
+}
+
+.hr{
+    width: 500px;
+}
+
+.main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main__element{
+    
+}
+
+.footer{
+    margin-top: 320px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.head{
+    padding-top: 200px;
+}
+
+.logo{
+    width: 200px;
 }
