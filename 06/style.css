@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color:  rgb(230, 230, 230);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.circle_1{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid #1275B9;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1275B9;
+}
+
+.circle_1:hover{
+    background-color: #1275B9;
+    transition: 1s;
+}
+
+.mask_1{
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask_1:hover{
+    filter: brightness(0) invert(1);
+    transition: 1s;
+}
+
+.circle_2{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #1275B9;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1275B9;
+}
+
+.circle_2:hover{
+    background-color: white;
+    border: 2px solid #1275B9;
+    transition: 1s;
+}
+
+.mask_2{
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask_2:hover{
+    filter: invert(1);
+    transition: 1s;
+}
+
+
+.circle_3{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #1275B9;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1275B9;
+}
+
+.circle_3:hover{
+    background-color: white;
+    border: 2px solid #1275B9;
+    transition: 1s;
+}
+
+.mask_3{
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask_3:hover{
+    filter: invert(1);
+    transition: 1s;
+}
+
+.header__circle_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+    width: 400px;
+    text-align: center;
+}
+
+.header__circle_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+    width: 400px;
+    text-align: center;
+}
+
+.header__circle_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+    width: 400px;
+    text-align: center;
+}
+.head{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
+}
