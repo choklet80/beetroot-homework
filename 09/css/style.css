@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+body{
+    background-color: #3399CC;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.border{
+    padding: 50px;
+    padding-left: 20%;
+}
+
+.container{
+    padding-top: 10px;
+    
+    height: 625px;
+    width: 985px;
+    font-size: 0px;
+}
+
+.container li{
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 20px;
+    height: 21%;
+    text-align: center;
+    
+    border: solid 3px white;
+     
+}
+.wi{
+    font-size: 40px;
+    opacity: 0.7;
+}
+
+.container li .grad{
+    font-size: 30px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+
+.container:hover li:not(li:hover){
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
