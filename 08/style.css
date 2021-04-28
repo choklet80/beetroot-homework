@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+    }
+
+.upper__bold__title_in_box{
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+
+.text_in_box{
+    padding-top: 20px;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.first__title{
+    color: #898F99;
+    word-spacing: 5px;
+}
+
+.main__title{
+    font-weight:1000;
+    letter-spacing: 16px;
+    font-size: 48px;
+    padding-top: 10px;
+    color: #0EC8CB;
+}
+
+.op__title{
+    padding-top: 20px;
+    font-weight: lighter;
+    color: #999999;
+    
+}
+
+.head{
+    text-transform: uppercase;
+    display: flex;
+    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head__div{
+    width: 650px;
+    text-align: center;
+}
+
+.first__rec{
+    height: 420px;
+    width: 240px;
+    text-align: center;
+}
+
+.sec__rec{
+    height: 420px;
+    width: 240px;
+    text-align: center;
+}
+
+.th__rec{
+    height: 420px;
+    width: 240px;
+    text-align: center;
+}
+
+.fo__rec{
+    height: 420px;
+    width: 240px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container div{
+    transition: all 1s;
+}
+
+.container div:hover{
+    color: white;
+    background-color: #0EC8CB;
+}
+
+.svg, .img{
+    padding-top: 10px;
+    transition: all 1s;
+}
+
+.container div:hover .svg{
+    
+    fill: rgb(255, 255, 255);
+}
+
+.container div:hover .img{
+    
+    filter: invert(1);
+}
+
