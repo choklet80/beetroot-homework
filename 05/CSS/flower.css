@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.shapka{
+    display: flex;
+}
+
+.shapka__w{
+    display: flex;
+    flex-direction: row;
+}
+
+.shapka__w_p{
+    padding-top: 80px;
+    padding-left: 26px;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pd_f_w{
+    padding-left: 81px;
+}
+
+.center{
+    font-size: 27px;
+    text-align: center;
+}
+
+.f_logo{
+    padding-top: 50px;
+    padding-left: 74px;
+}
+
+.bg{
+    padding-top: 310px;
+    padding-left: 100px;
+    max-width: 500px;
+}
+
+.main_inform{
+    display: flex;
+    justify-content: space-between;
+}
+
+.r_column{
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.pd_column{
+    padding-top: 20px;
+}
+
+.l_column{
+    line-height: 25px;
+}
+
+.bot{
+    display: flex;
+    padding-top: 20px;
+}
+
+.bot_p{
+    text-decoration: underline;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.button{
+    background: #63274E;
+    height: 50px;
+    width: 196px;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
