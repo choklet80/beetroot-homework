@@ -1,0 +1,48 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body{
+    background-color: #d4e5f5 !important;
+}
+
+.bg_for_info{
+    background-color: white;
+    width: 360px;
+    height: 240px;
+    margin-top: 220px !important;
+    text-transform: uppercase;
+    padding: 10px 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.photo_1{
+    min-height: 440px; 
+    width: 740px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.padding{
+    padding: 20px 80px !important;
+    text-align: start !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.date{
+    opacity: 0.5; 
+    font-weight: 400;
+    margin-bottom: 10px !important;
+}
+
+.men{
+    margin-top: 40px !important;
+    width: 50px;
+}
