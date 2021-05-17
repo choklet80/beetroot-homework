@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/3ae74acd04.js" crossorigin="anonymous"></script>
+    <title>Form</title>
+</head>
+<body>
+    <div class="page">
+        <form class="form">
+            <div class="form__nav">
+                <a class="color-w" href="#!">Sign in</a>
+                <a class="mg-l-10 color-w" href="#!">Join us</a>
+            </div>
+            <label class="form__label mg-top-40px">
+                <span class="caption">
+                    Username
+                </span>
+                <input class="txtinput" required type="text" min="2" max="15" name="Uname" id="">
+            </label>
+            <label class="form__label">
+                <span class="caption">
+                    Password
+                </span>
+                <input class="txtinput" required type="text" min="8" name="pass" id="">
+            </label>
+            <label class="form__label checkbox">
+                <input class="keep" type="checkbox" name="keep_sign" id="">
+                <span class="mg-l-10">Keep me signed in</span>
+            </label>
+            <div class=" mg-top-40px">
+                <button type="submit" class="form__btn">Sign in</button>
+            </div>
+            <div class="form__help mg-top-40px">
+                <div class="fit line-grey">
+                    Forgot password
+                </div>
+                <div class="fit line-grey">
+                    Create an account
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
