@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <a style="z-index: 1; font-weight: 600; color: rgb(28, 22, 67);font-family: 'Quicksand', sans-serif; text-decoration: none; position: absolute; top: 18px; left: 45px; font-size: 20px;" href="../index.html">BACK</a>
+    <main class="main">
+        <div class="container">
+            <form class="form" action="#" method="GET">
+                <label class="input-block">
+                    <span class="input-block__name">Name</span>
+                    
+                    <input 
+                    class="input-block__input" 
+                    required 
+                    type="text" 
+                    name="name" 
+                    id=""
+                    min="2"
+                    >
+                    <span class="input-block__hint">Обязательное поле</span>
+                </label>
+
+                <label class="input-block">
+                    <span class="input-block__name">Age (18+)</span>
+
+                    <input 
+                    class="input-block__input" 
+                    required 
+                    type="number" 
+                    name="age" 
+                    id=""
+                    min="18"
+                    max="100"
+                    autocomplete="off"
+                    >
+                    <span class="input-block__hint">Age 18-100</span>
+                </label>
+
+                <label class="input-block">
+                    <span class="input-block__name">City</span>
+
+                    <input 
+                    class="input-block__input" 
+                    required 
+                    type="number" 
+                    name="age" 
+                    id=""
+                    min="18"
+                    max="100"
+                    autocomplete="off"
+                    >
+                    <span class="input-block__hint">Обязательное поле</span>
+                </label>
+
+                <label class="input-block">
+                    <span class="input-block__name">Time</span>
+
+                    <input 
+                    class="input-block__input" 
+                    required 
+                    type="time" 
+                    name="time" 
+                    id=""
+                    >
+                   
+                    <span class="input-block__hint">Обязательное поле</span>
+                </label>
+
+                <label class="input-block">
+                    <span class="input-block__name">Color</span>
+
+                    <input 
+                    class="input-block__input pd" 
+                    type="color" 
+                    name="color" 
+                    id=""
+                    >
+                   
+                    <span class="input-block__hint">Обязательное поле</span>
+                </label>
+
+                <label class="input-block">
+                    <span class="input-block__name">About yourself</span>
+
+                    <textarea class="input-block__ta" name="about" required minlength="20" maxlength="300" id=""></textarea>
+                   
+                    <span class="input-block__hint">Обязательное поле (20-100 symbol)</span>
+                </label>
+
+                <button class="btn btn--primary" type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

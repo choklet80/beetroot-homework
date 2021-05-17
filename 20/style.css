@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.head__logo{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.head{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    top: 20px;
+}
+
+.head__nav{
+    margin-left: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.strawberry-page{
+    background-image: url(bg_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.life{
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.life__container{
+    max-width: 350px;
+    max-height: 400px;
+    margin-left: 10%;
+}
+
+.life__title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.life__text{
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 20px;
+}
+
+.life__btn{
+    font-family: 'Raleway', sans-serif;
+    width: 150px;
+    text-align: center;
+    padding-top: 15px;
+    height: 50px;
+    background-color: rgb(255, 111, 0);
+    color: white;
+}
+
+.berry-page{
+    background-image: url(bg_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about{
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 20%;
+}
+
+.about__container{
+    color: white;
+    max-width: 450px;
+}
+
+.about__title{
+    text-align: center;
+    font-size: 100px;
+}
+
+.about__text{
+    font-size: 17px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    line-height: 20px;
+}

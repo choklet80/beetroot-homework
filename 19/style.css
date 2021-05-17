@@ -1,0 +1,88 @@
+body{
+    background-color: #F5F5F5;
+}
+.estate{
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.estate:hover{
+    box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+}
+
+.estate__showcase{
+    height:266px;
+}
+
+.estate__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.estate___contacts{
+    background: lightskyblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estate__contact{
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 15px;
+    line-height: 48px;
+    background: rgb(15, 119, 184);
+    text-align: center;
+    color: white;
+}
+
+.estate__title{
+    font-size: 24px;
+    line-height: 1.333333;
+    padding: 30px;
+    font-weight: 600;
+}
+
+.estate__specs{
+    border-top: 1px solid rgba(157, 157, 157, 0.412);
+    display: flex;
+}
+
+.estate__spec{
+    padding:20px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 22px;
+    border-left: 1px solid rgba(157, 157, 157, 0.412);
+    width: calc(100%/3);
+}
+
+.estate__spec:first-child{
+    border-left: none;
+}
+
+.transition-opacity{
+    position: relative;
+    transition: opacity 1s;
+}
+
+.transition-opacity__front{
+    position: absolute;
+    transition: opacity 1s;
+}
+
+.transition-opacity__back{
+    transition: opacity 1s;
+    position: absolute;
+    opacity: 0;
+}
+
+.transition-opacity__back:hover{
+    opacity: 1;
+}
+
