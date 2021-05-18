@@ -27,7 +27,7 @@
             <form class="form">
                 <input required min="2" max="30" class="form__data form__data--active" type="text" name="name" id="" placeholder="Your name surname...">
                 <input required class="form__data form__data--active" type="email" name="email" id="" placeholder="Your email...">
-                <input required pattern="{1234567890}" class="form__data form__data--active" type="tel" name="tel" id="" placeholder="Your phone number...">
+                <input required pattern="[0-9]{10}" title="ex: 0992234903" class="form__data form__data--active" type="tel" name="tel" id="" placeholder="Your phone number...">
                 <textarea class="form__data he-250 form__data--active" name="message" id="" placeholder="Your message" cols="30" rows="10"></textarea>
                 <button class="form__data btn" type="submit">Submit</button>
             </form>
