@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <a style="z-index: 1; font-weight: 600; color: rgb(28, 22, 67);font-family: 'Quicksand', sans-serif; text-decoration: none; position: absolute; top: 18px; left: 45px; font-size: 20px;" href="../index.html">BACK</a>
+    <div class="wraper">
+
+        <header class="head">
+            <div class="contact">
+                <h1 class="contact__caption">
+                    Contact
+                </h1>
+                <p class="contact__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae provident modi impedit ab nemo.
+                </p>
+            </div>
+        </header>
+
+        <main class="main">
+            <form class="form">
+                <input required min="2" max="30" class="form__data form__data--active" type="text" name="name" id="" placeholder="Your name surname...">
+                <input required class="form__data form__data--active" type="email" name="email" id="" placeholder="Your email...">
+                <input required pattern="{1234567890}" class="form__data form__data--active" type="tel" name="tel" id="" placeholder="Your phone number...">
+                <textarea class="form__data he-250 form__data--active" name="message" id="" placeholder="Your message" cols="30" rows="10"></textarea>
+                <button class="form__data btn" type="submit">Submit</button>
+            </form>
+            <div class="info">
+                <h3 class="info__caption">address</h3>
+                <p class="info__subtitle">123 City name, Street, City</p>
+                <h3 class="info__caption">email</h3>
+                <p class="info__subtitle">choklet870@gmail.com</p>
+                <h3 class="info__caption">phone</h3>
+                <p class="info__subtitle">+380952263022</p>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p class="footer__copyright">
+            © 2015 Company. All right reserved.
+        </p>
+        <img src="logo.png" alt="" class="footer__logo">
+        <p class="footer__love">
+            Made with <span class="red">love</span> by Pavlik
+        </p>
+    </footer>
+</body>
+</html>

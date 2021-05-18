@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: rgb(33, 32, 32);
+    font-family: 'Raleway', sans-serif;
+}
+
+.wraper{
+    background: url(bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 880px;
+}
+
+.footer{
+    background-color: #262626;
+    color: grey;
+    display: flex;
+    padding: 31px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.red{
+    color: #ff2b58;
+}
+
+.contact__subtitle{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.contact__caption{
+    font-size: 70px;
+}
+
+.contact{
+    margin-top: 50px;
+    width: 430px;
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.main{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.form__data{
+    height: 50px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #00c4c4;
+    border: none;
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.he-250{
+    height: 250px;
+    resize: vertical;
+    padding-top: 10px;
+}
+
+.info{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.form__data--active:focus{
+    outline: none;
+    border-left: 4px solid #355b82;
+    border-right: 4px solid #355b82;
+    transition: all 0.2s;
+}
+
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.info__caption{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.info__subtitle{
+    margin-top: 3px;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+}
+
+.btn{
+    padding: 8px 12px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.14);
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.14);
+    transform: scale(1.01);
+}
+
+.btn:active{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.14);
+    transform: scale(0.98);
+}
