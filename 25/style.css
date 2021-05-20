@@ -138,15 +138,13 @@ body{
 
 .plusinfo{
     min-height: 490px;
-    display: flex;
-    flex-direction: column;
 }
 
 .upper{
     display: flex;
     max-height: 237px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: stretch;
 }
 
 .under{
@@ -167,12 +165,14 @@ body{
     flex-wrap: wrap;
     padding: 30px;
     min-height: 237px;
-    min-width: 540px;
     color:white;
+    flex-grow: 1;
+    flex-basis: 50px;
+    margin: 10px;
 }
 
 .card--middle{
-    min-width: 800px;
+    flex-basis: 100px;
 }
 
 .bg--top{
