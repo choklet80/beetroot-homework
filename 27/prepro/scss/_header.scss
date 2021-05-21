@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+
+    &__subtitle{
+        font-size: 20px;
+        text-transform: uppercase;
+        opacity: 0.3;
+        font-weight: 700;
+        line-height: 0px;
+        letter-spacing: 2px;
+    }
+
+    &__title{
+        color:yellow;
+        font-weight: 900;
+        font-size: 70px;
+        text-transform: uppercase;
+        line-height: 0px;
+    }
+}

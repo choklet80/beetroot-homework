@@ -1,0 +1,19 @@
+.particles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__particle{
+        width: 10px;
+        height: 5px;
+        background-color: yellow;
+        margin: 10px 2px 20px;
+
+        &--middle{
+            width: 20px;
+            height: 5px;
+            background-color: yellow;
+            margin: 10px 2px 20px;
+        }
+    }
+}

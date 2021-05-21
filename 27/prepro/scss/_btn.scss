@@ -1,0 +1,19 @@
+.btn{
+    
+    &--small{
+        border: 1px solid #ffcc00;
+       
+        
+        &__text{
+            text-transform: uppercase;
+            opacity: .45;
+            padding: 9px;
+            font-weight: 600;
+            line-height: 0;
+            text-align: center;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+    }
+
+}

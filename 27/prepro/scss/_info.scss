@@ -1,0 +1,48 @@
+.info{
+
+
+    &__name{
+        font-size: 40px;
+        opacity: 0.5;
+        font-weight: 900;
+    }
+
+    &__role{
+        margin-top: 30px;
+        font-size: 20px;
+        opacity: 0.4;
+        font-weight: 600;
+    }
+
+    &__socials{
+        display: flex;
+        justify-content: center;
+        
+        flex-basis: 20px;
+    }
+
+    &__socials .social{
+        border-radius: 50%;
+        min-width: 25px;
+        min-height: 25px;
+        border:1px solid grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.45;
+        margin: 2px;
+        transition: opacity .4s;
+    }
+
+    &__story{
+        margin: 16px 0 0;
+    }
+
+    .social:hover{
+        opacity: 0.75;
+    }
+}
+
+i{
+    color: rgb(70, 70, 70);
+}
