@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .container-gallery {
+    max-width: 1198px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .gallery {
+    background-color: yellow;
+    padding: 150px 0;
+  }
+  .gallery__heading {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    h1{
+        font-size: 60px;
+        opacity: 0.8;
+    }
+    p{
+        margin-top: 10px;
+        opacity: 0.6;
+        margin-bottom: 10px;
+    }
+  }
+  .gallery__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .gallery__item {
+    min-height: 300px;
+    margin: 15px;
+    width: calc(50% - 30px);
+  }
+  .gallery__item--small {
+    width: calc(33.3333333% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  @media screen and (max-width: 768px) and (min-width: 526px) {
+    .gallery__item--small {
+      flex-direction: row;
+    }
+  }
+  .gallery__item--large {
+    width: calc(66.6666666% - 30px);
+  }
+  @media screen and (max-width: 768px) {
+    .gallery__item {
+      width: 100%;
+    }
+  }
+  .gallery__subitem {
+    flex-grow: 1;
+    margin: 15px 0;
+  }
+  .gallery__subitem:first-child {
+    margin-top: 0;
+  }
+  .gallery__subitem:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 768px) and (min-width: 526px) {
+    .gallery__subitem {
+      margin: 0 15px;
+    }
+    .gallery__subitem:first-child {
+      margin-left: 0;
+      height: 300px;
+    }
+    .gallery__subitem:last-child {
+      margin-right: 0;
+      height: 300px;
+    }
+  }
+  
+  .bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg__1 {
+    background-image: url("img-gallery/bg_hover_2.jpg");
+  }
+  .bg__2 {
+    background-image: url("img-gallery/bg_21.jpg");
+  }
+  .bg__3 {
+    background-image: url("img-gallery/bg_20.jpg");
+  }
+  .bg__4 {
+    background-image: url("img-gallery/bg_19.jpg");
+  }
+  .bg__5 {
+    background-image: url("img-gallery/bg_18.jpg");
+  }
+  
+  .box-shadow {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s;
+  }
+  .box-shadow:hover {
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+  }/*# sourceMappingURL=main.css.map */

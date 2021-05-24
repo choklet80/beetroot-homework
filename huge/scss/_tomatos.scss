@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-tomato{
+    min-height: 100vh;
+    background: url(img-tomatos/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-tomato__block{
+    
+    font-size: 25px;
+    background-color: white;
+    min-width: 400px;
+    min-height: 110px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @media screen and (max-width: 520px) {
+        min-width: 300px;
+      }
+      
+}
+
+.section-nav{
+    @media screen and (max-width: 420px) {
+        transform: scale(0.8);
+      }
+}
+
+.container-tomato__block--small{
+    min-width:120px;
+    padding: 30px;
+    border-left: 1px solid grey;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.container-tomato{
+    display: flex;
+    margin-top: 20px;
+}
+
+.main-tomato__title{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;   
+    @media screen and (max-width: 471px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 420px) {
+        margin-top: -200px;
+      }
+}
+
+.container-tomato:hover  svg{
+    fill: tomato;
+    transform: scale(1.2);
+}
+
+
+
+svg{
+    transition: all 1s;
+}
