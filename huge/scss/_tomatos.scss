@@ -7,7 +7,7 @@
 .main-tomato{
     min-height: 100vh;
     background: url(img-tomatos/bg.png);
-    background-position: center;
+    background-position: center right 20%;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Raleway', sans-serif;
@@ -52,13 +52,15 @@
 .container-tomato{
     display: flex;
     margin-top: 20px;
+    transition: all 1s;
 }
 
 .main-tomato__title{
     font-size: 100px;
     color: white;
     letter-spacing: 3px;
-    text-align: center;   
+    text-align: center;  
+    margin-left: 50px; 
     @media screen and (max-width: 471px) {
         font-size: 50px;
       }
@@ -67,13 +69,30 @@
       }
 }
 
-.container-tomato:hover  svg{
-    fill: tomato;
-    transform: scale(1.2);
+.container-tomato:nth-child(1):hover{
+    fill: rgb(55, 111, 214);
+    transform: scale(1.02);
+    color: rgb(104, 142, 211);
+    
 }
 
+.container-tomato:nth-child(2):hover{
+    fill: rgb(17, 130, 64);
+    transform: scale(1.02);
+    color: rgb(60, 124, 87);
+    
+}
 
+.container-tomato:nth-child(3):hover{
+    fill: rgb(55, 111, 214);
+    transform: scale(1.02);
+    color: rgb(104, 142, 211);
+    
+}
 
-svg{
-    transition: all 1s;
+.container-tomato:nth-child(4):hover{
+    fill: rgb(232, 143, 26);
+    transform: scale(1.02);
+    color: rgb(231, 179, 110);
+    
 }

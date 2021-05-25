@@ -15,7 +15,7 @@
     width: 375px;
     height: 326px;
     position: relative;
-    margin-top: 10px;
+    margin: 12px;
     transition: transform 1s;
 }
 
@@ -29,14 +29,14 @@
 .pic_2{
     background-image: linear-gradient(180deg, rgba(0,9,64,0) 44%, rgba(0,0,0,0.6867121848739496) 90%),
     url(img-blog/img_2.png);
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .pic_3{
     background-image: linear-gradient(180deg, rgba(0,9,64,0) 44%, rgba(0,0,0,0.6867121848739496) 90%), url(img-blog/img_3.png);
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -67,7 +67,9 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 50px;
 }
 
 .main__card__date{
@@ -115,8 +117,18 @@
     box-shadow: 6px 9px 30px 1px rgba(0, 0, 0, 0.6);
     border: solid rgb(243, 159, 159) 1px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.btn:active{
+    transform: scale(0.95);
+    box-shadow: 3px 6px 15px 1px rgba(0, 0, 0, 0.6);
+}
 
 .more{
     margin-top: 40px;

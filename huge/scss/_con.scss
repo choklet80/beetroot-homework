@@ -24,6 +24,16 @@ body{
     padding: 31px;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width:590px){
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+.form-contact__copyright,.form-contact__love{
+    @media screen and (max-width:590px){
+        margin: 10px;
+    }
 }
 
 .red{
@@ -36,6 +46,7 @@ body{
     letter-spacing: 1px;
     line-height: 22px;
     max-width: 500px;
+    
 }
 
 .contact__caption{
