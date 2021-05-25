@@ -4,36 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="scss/main.css" />
     <title>Huge</title>
   </head>
   <body>
     <div class="strawberry-page">
       <header class="head-strawberry">
-        <a href="../index.html" class="head-strawberry__logo">Back</a>
+        <a class="head-strawberry__logo">Cache</a>
         <nav class="head-strawberry__navs">
-          <a class="head-strawberry__nav" href="">HOME</a>
-          <a class="head-strawberry__nav" href="">ABOUT</a>
-          <a class="head-strawberry__nav" href="">SERVICE</a>
-          <a class="head-strawberry__nav" href="">GALLERY</a>
-          <a class="head-strawberry__nav" href="">BLOG</a>
-          <a class="head-strawberry__nav" href="">CONTACT</a>
+          <a href="../index.html" class="head-strawberry__nav">HOME</a>
+          <a class="head-strawberry__nav" href="#aboutUs">ABOUT</a>
+          <a class="head-strawberry__nav" href="#tomato">SERVICE</a>
+          <a class="head-strawberry__nav" href="#gallery">GALLERY</a>
+          <a class="head-strawberry__nav" href="#blog">BLOG</a>
+          <a class="head-strawberry__nav" href="#con">CONTACT</a>
+          <a
+            id="icon"
+            href="javascript:void(0);"
+            class="icon closebtn"
+            onclick="openNav()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
       </header>
-      
-        <div class="life__container">
-          <h1 class="life__title">Fresh Life</h1>
-          <p class="life__text">
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
-            asperiores?
-          </p>
-          <div class="life__btn">GET FREE NOW</div>
-        </div>
-      
+      <div id="mySidenav"  class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../index.html"  class="head-strawberry__nav">HOME</a>
+        <a class="head-strawberry__nav"  onclick="closeNav()" href="#aboutUs">ABOUT</a>
+          <a class="head-strawberry__nav" onclick="closeNav()" href="#tomato">SERVICE</a>
+          <a class="head-strawberry__nav" onclick="closeNav()" href="#gallery">GALLERY</a>
+          <a class="head-strawberry__nav" onclick="closeNav()" href="#blog">BLOG</a>
+          <a class="head-strawberry__nav" onclick="closeNav()" href="#con">CONTACT</a>
+      </div>
+
+      <div class="life__container">
+        <h1 class="life__title">Fresh Life</h1>
+        <p class="life__text">
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+          asperiores?
+        </p>
+        <div class="life__btn">GET FREE NOW</div>
+      </div>
     </div>
-    <div class="berry-page">
+    <div id="aboutUs" class="berry-page">
       <div class="about">
         <div class="about__container">
           <h1 class="about__title">About us</h1>
@@ -53,12 +78,22 @@
       </div>
     </div>
 
-    <div class="main-tomato">
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100vw";
+        
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        
+      }
+    </script>
+
+    <div id="tomato" class="main-tomato">
       <div class="section-nav">
         <div class="container-tomato">
-          <div class="container-tomato__block">
-            Online Shopping
-          </div>
+          <div class="container-tomato__block">Online Shopping</div>
           <div class="container-tomato__block--small">
             <svg
               class="svg-tomato"
@@ -75,9 +110,7 @@
           </div>
         </div>
         <div class="container-tomato">
-          <div class="container-tomato__block">
-            Quality Product
-          </div>
+          <div class="container-tomato__block">Quality Product</div>
           <div class="container-tomato__block--small">
             <svg
               class="svg-tomato"
@@ -95,9 +128,8 @@
         </div>
         <div class="container-tomato">
           <div class="container-tomato__block">
-            
-              Domestic & International <br> Delivery
-            
+            Domestic & International <br />
+            Delivery
           </div>
           <div class="container-tomato__block--small">
             <svg
@@ -115,9 +147,7 @@
           </div>
         </div>
         <div class="container-tomato">
-          <div class="container-tomato__block">
-            Well Organized
-          </div>
+          <div class="container-tomato__block">Well Organized</div>
           <div class="container-tomato__block--small">
             <svg
               class="svg-tomato"
@@ -135,13 +165,10 @@
         </div>
       </div>
 
-      <div class="main-tomato__title">
-        Our Services
-      </div>
-      
+      <div class="main-tomato__title">Our Services</div>
     </div>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <div class="container-gallery">
         <div class="gallery__heading">
           <h1>Gallery</h1>
@@ -169,10 +196,9 @@
       </div>
     </section>
 
-    <section class="subscribe">
+    <section id="subscribe" class="subscribe">
       <div class="main-subscribe">
         <div class="sub-container">
-
           <h1 class="sub-container__title">Subscribe To Us</h1>
           <p class="sub-container__subtitle">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
@@ -181,12 +207,12 @@
           </p>
           <form class="sub-container__form">
             <input
-            type="email"
-            class="sub-container__form--input"
-            name="email"
-            required
-            id="mail"
-            placeholder="Your email address..."
+              type="email"
+              class="sub-container__form--input"
+              name="email"
+              required
+              id="mail"
+              placeholder="Your email address..."
             />
             <button type="submit" class="btn-green-subscribe">Subscribe</button>
           </form>
@@ -194,7 +220,7 @@
       </div>
     </section>
 
-    <section class="blog">
+    <section id="blog" class="blog">
       <header class="header">
         <div class="header__container">
           <h1 class="header__h1">Blog</h1>
@@ -238,30 +264,67 @@
       </footer>
     </section>
 
-
-
-    <section class="con">
-
+    <section id="con" class="con">
       <div class="wrapper-con">
-        
         <header class="head-contact">
           <div class="contact">
-            <h1 class="contact__caption">
-              Contact
-            </h1>
+            <h1 class="contact__caption">Contact</h1>
             <p class="contact__subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae provident modi impedit ab nemo.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+              provident modi impedit ab nemo.
             </p>
           </div>
         </header>
-        
+
         <main class="main-contact">
           <form class="form-contact">
-            <input required min="2" max="30" class="placehold form-contact__data form-contact__data--active" type="text" name="name" id="" placeholder="Your name surname...">
-            <input required class="placehold form-contact__data form-contact__data--active" type="email" name="email" id="" placeholder="Your email...">
-            <input required pattern="[0-9]{10}" title="ex: 0992234903" class="placehold form-contact__data form-contact__data--active" type="tel" name="tel" id="" placeholder="Your phone number...">
-            <textarea class="placehold form-contact__data he-250 form-contact__data--active" name="message" id="" placeholder="Your message" cols="30" rows="10"></textarea>
-            <button class="placehold form-contact__data btn-contact" type="submit">Submit</button>
+            <input
+              required
+              min="2"
+              max="30"
+              class="placehold form-contact__data form-contact__data--active"
+              type="text"
+              name="name"
+              id=""
+              placeholder="Your name surname..."
+            />
+            <input
+              required
+              class="placehold form-contact__data form-contact__data--active"
+              type="email"
+              name="email"
+              id=""
+              placeholder="Your email..."
+            />
+            <input
+              required
+              pattern="[0-9]{10}"
+              title="ex: 0992234903"
+              class="placehold form-contact__data form-contact__data--active"
+              type="tel"
+              name="tel"
+              id=""
+              placeholder="Your phone number..."
+            />
+            <textarea
+              class="
+                placehold
+                form-contact__data
+                he-250
+                form-contact__data--active
+              "
+              name="message"
+              id=""
+              placeholder="Your message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button
+              class="placehold form-contact__data btn-contact"
+              type="submit"
+            >
+              Submit
+            </button>
           </form>
           <div class="info-contact">
             <h3 class="info-contact__caption">address</h3>
@@ -273,17 +336,20 @@
           </div>
         </main>
       </div>
-      
+
       <footer class="footer-contact">
         <p class="form-contact__copyright">
           © 2015 Company. All right reserved.
         </p>
-        <img src="scss/img-contact/logo.png" alt="" class="form-contact__logo">
+        <img
+          src="scss/img-contact/logo.png"
+          alt=""
+          class="form-contact__logo"
+        />
         <p class="form-contact__love">
           Made with <span class="red">love</span> by Pavlik
         </p>
       </footer>
     </section>
-      
-    </body>
+  </body>
 </html>
