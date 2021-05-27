@@ -49,12 +49,8 @@ body{
     text-transform: uppercase;
 }
 
-.main{
-    min-height: 3020px;
-}
-
 .aboutUs{
-    min-height: 620px;
+    padding: 100px 15px;
     background-color: white;
 }
 
@@ -65,12 +61,20 @@ body{
     border-top: none;
     position: relative;
     box-sizing: border-box;
-    padding: 10px 250px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 10px;
+
 }
 
 .interesting-border--dark {
     color: rgb(65, 64, 64);
     border-color: rgb(65, 64, 64);
+}
+.interesting-border--light {
+    color: rgb(235, 235, 235);
+    border-color: rgb(235, 235, 235);
 }
 
 .interesting-border::before, .interesting-border::after {
@@ -106,12 +110,7 @@ body{
   
 .container {
     max-width: 900px;
-  }
-
-.flex-c-c{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    margin: 0 auto;
   }
 
 .services{
@@ -119,11 +118,11 @@ body{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      min-height: 488px;
+      padding: 100px 15px;
   }
 
 .what{
-    min-height: 1420px;
+    padding: 100px 15px;
     background-color: white;
 }
 
@@ -137,25 +136,29 @@ body{
 }
 
 .plusinfo{
-    min-height: 490px;
+    padding: 100px 15px;
 }
+
+
 
 .upper{
     display: flex;
-    max-height: 237px;
+    
     flex-wrap: wrap;
     justify-content: stretch;
 }
 
 .under{
     display: flex;
+    
     margin-top: 10px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
 }
 
 .card__caption{
     text-transform: uppercase;
+    min-width: 200px;
 }
 
 .card{
@@ -172,7 +175,7 @@ body{
 }
 
 .card--middle{
-    flex-basis: 100px;
+    flex-basis: 230px;
 }
 
 .bg--top{
@@ -213,14 +216,9 @@ body{
     background-size: cover;
 }
 
-.footer{
-    min-height: 600px;
-
-}
-
 .btn{
     margin-top: 20px;
-    min-width: 400px;
+    padding: 0 20px;
     min-height: 50px;
     color:white;
     text-transform: uppercase;
@@ -230,7 +228,7 @@ body{
 }
 
 .contactUs{
-    min-height: 620px;
+    padding: 100px 15px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -246,6 +244,11 @@ body{
     display: flex;
     align-items: center;
     margin-top: 50px;
-    min-width: 400px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.para-width{
+    max-width: 500px; margin: 0 auto;
+}
+

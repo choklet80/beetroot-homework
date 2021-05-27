@@ -6,7 +6,7 @@
 
 .main-tomato{
     min-height: 100vh;
-    background: url(img-tomatos/bg.png);
+    background: url(img-tomatos/img.jpg);
     background-position: center right 20%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,18 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .main-tomato {
+        background-image: url(img-tomatos/img@2x.jpg);
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio: 3) {
+    .main-tomato {
+        background-image: url(img-tomatos/img@3x.jpg);
+    }
 }
 
 .container-tomato__block{
@@ -63,9 +75,10 @@
     margin-left: 50px; 
     @media screen and (max-width: 471px) {
         font-size: 50px;
+        margin-left: 0;
       }
       @media screen and (max-width: 420px) {
-        margin-top: -200px;
+        margin-left: 0;
       }
 }
 

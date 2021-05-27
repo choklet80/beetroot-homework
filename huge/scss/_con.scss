@@ -10,11 +10,23 @@ body{
 }
 
 .wrapper-con{
-    background: url(img-contact/bg.png);
+    background: url(img-contact/img.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 880px;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .wrapper-con {
+        background-image: url(img-contact/img@2x.jpg);
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio: 3) {
+    .wrapper-con {
+        background-image: url(img-contact/img@3x.jpg);
+    }
 }
 
 .footer-contact{
@@ -126,6 +138,11 @@ body{
     margin-bottom: 14px;
     letter-spacing: 1px;
 }
+
+.placehold::placeholder{
+    color: white;
+}
+
 
 .btn-contact{
     padding: 8px 12px;
