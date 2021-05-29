@@ -21,6 +21,11 @@ a {
   padding: 0 10px;
 }
 
+.head-strawberry__logo {
+  font-weight: 400;
+  font-size: 30px;
+}
+
 .head-strawberry__nav {
   margin-left: 25px;
   font-family: "Raleway", sans-serif;
