@@ -291,11 +291,6 @@ a {
     transform: scale(0.8);
   }
 }
-@media screen and (max-width: 1190px) {
-  .section-nav {
-    order: 1;
-  }
-}
 
 .container-tomato__block--small {
   min-width: 120px;
