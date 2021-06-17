@@ -2,7 +2,7 @@ function calcsSum(){
     let num1 = Number(prompt("Set begin: ")) 
     let num2 = Number(prompt("Set end: "))
     let sum = 0;
-    let temp = 0
+    let temp = 0;
     
     if(num1 > num2)
     {
@@ -201,7 +201,7 @@ function move(){
         temp = Math.floor(temp);
     }
     
-    let step = 2;
+    let step = 3;
     
     for(i=0;i<step;i++)
     {
