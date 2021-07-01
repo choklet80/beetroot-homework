@@ -36,23 +36,61 @@ class Marker{
     }
 
     print(string){
-        let result = ''
         if(this.quantity <= 0){
-            alert("Marker is empty!")
+            alert("Маркер пустой!")
             return
         }
-        for(let i = 0; i < string.length; i++){
-            result = string.substr(1,1)
-            this.quantity -= 0.5
-            if(this.quantity <= 0)
-            {
-                document.write(`<p style="font-size:40px;color:${this.color};">${result}</p>`)   
-                alert("Marker is empty!")
-                return
-            }
+        if(this.quantity < string.length * 0.5)
+        {
+            alert("Дозаправте маркер!")
+            return
         }
-        document.write(`<p style="font-size:40px;color:${this.color};">${result}</p>`)
+        this.quantity -= string.length * 0.5
+        document.write(`<p style="font-size:40px;color:${this.color};">${string}</p>`)   
     }
 }
 
 let marker = new Marker
+
+class cool_Marker extends Marker{
+
+
+    fill_marker(){
+        this.quantity = Number(100)
+    }
+}
+
+let cool_market = new cool_Marker("blue")
+
+class Employee{
+    constructor(name,salary){
+        this.name = name,
+        this.salary = salary
+    }
+}
+
+let arr_employee = []
+
+arr_employee.push(new Employee("Pasha", 1000))
+arr_employee.push(new Employee("Masha", 1340))
+arr_employee.push(new Employee("Sasha", 1320))
+arr_employee.push(new Employee("Ann", 1040))
+
+class EmpTable{
+    constructor(arr_emp){
+        this.arr_emp = arr_emp
+    }
+
+    getHTML(){
+        let show = `<table border = "1" ><caption>Таблица работников банка</caption>
+        <tr><th>Имя работника</th><th>Зарплата работника</th></tr>
+        `
+        for(let i = 0; i < this.arr_emp.length; ++i){
+            show += `<tr><th>${this.arr_emp[i].name}</th><th>${this.arr_emp[i].salary}</th></tr>`
+        }
+        show += `</table>`
+        document.write(show)
+    }
+}
+
+table = new EmpTable(arr_employee)

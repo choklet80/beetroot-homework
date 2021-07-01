@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <a style="z-index: 1; font-weight: 600; color: #ab78f2 ;font-family: 'Montserrat', sans-serif; text-decoration: none; position: absolute; top: 5px; left: 5px; font-size: 15px;" href="../index.html">BACK</a>
+    
+    <ul id="list"></ul>
+    <div class="container">
+        <input type="button" class="btn" onclick="open_modal()" id="open-modal" value="Открыть модальное окно">
+    </div>
+        <div id="modal" class="modal-overlay">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <span class="modal-title">Hello</span>
+                    <input type="button" onclick="close_modal()" id="close-modal" class="modal-close" value="&times;">
+                </div>
+                <div class="modal-body">
+                    <img src="pic.png" alt="ainane">
+                </div>
+                <div class="modal-footer">
+                    Have a nice day!
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <h2 class="traffic_light_caption">Светофор</h2>
+        <div class="traffic_light_body">
+            <div class="traffic_light"></div>
+            <div class="traffic_light"></div>
+            <div class="traffic_light"></div>
+        </div>
+    </div>
+    <div class="container">
+        <input type="button" class="btn" onclick="light_switch()" id="color_switch" value="Следующий цвет">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
