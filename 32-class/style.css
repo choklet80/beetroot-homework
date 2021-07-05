@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav{
+    
+}
+
+.nav__link{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 10px;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.slider{
+    position: relative;
+    height: 100vh;
+}
+
+.slider__body{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.slider__item{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.2s;  
+}
+
+.slider__prev, .slider__next{
+    width: 40px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    background-color: gray;
+    margin-top: -45px;
+}
+
+.slider__next{
+    right: 25px;
+}
+
+
+.slider__prev{
+    left: 25px;
+}
+
+.about-us{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 92px;
+}

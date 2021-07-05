@@ -9,30 +9,30 @@
 </head>
 <body>
     <script src="script.js"></script>
-    <table>
+    <table id="myTable">
         <tr>
-            <td id="dates">Дата</td>
-            <td id="cods">Код товара</td>
-            <td id="managers">Менеджер</td>
-            <td id="sells">Продажи</td>
+            <td onclick="sortManager(0)" id="dates">Дата</td>
+            <td onclick="sortManager(1)" id="cods">Код товара</td>
+            <td onclick="sortManager(2)" id="managers">Менеджер</td>
+            <td onclick="sortManager(3)" id="sells">Продажи</td>
         </tr>
         <tr>
-            <td>03.10.2016</td>
+            <td>03.10.2013</td>
             <td>101</td>
             <td>Иванов</td>
             <td class="cost">51 р.</td>
         </tr>
         <tr>
-            <td>03.10.2016</td>
+            <td>03.10.2015</td>
             <td>102</td>
             <td>Петров</td>
             <td class="cost">63 р.</td>
         </tr>
         <tr>
-            <td>03.10.2016</td>
-            <td>102</td>
+            <td>03.11.2017</td>
+            <td>122</td>
             <td>Сидоров</td>
-            <td class="cost">63 .р</td>
+            <td class="cost">63 р.</td>
         </tr>
         <tr>
             <td>04.10.2016</td>

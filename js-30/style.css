@@ -26,3 +26,22 @@ table td {
 	border: 1px solid #dddddd;
 	padding: 5px;
 }
+
+#block {
+	background-color: #ff0;
+	min-height: 100px;
+	min-width: 200px;
+	position: relative;
+	width: 400px;
+	
+  }
+  #block_resize {
+	background-color: #000;
+	bottom: 0;
+	cursor: se-resize;
+	height: 12px;
+	margin-top: 9px;
+	position: absolute;
+	right: 0;
+	width: 12px;
+  }

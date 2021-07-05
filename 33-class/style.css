@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background: rgb(185, 105, 73);   
+    color: white;
+    cursor: pointer;
+}
+
+.episode{
+    padding: 15px;
+}
+
+.episode__title{
+    font-size: 32px;
+}
+
+.episode__air-date{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.episode__actions{
+    padding-top: 15px;
+}
+
