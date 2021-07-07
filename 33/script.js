@@ -1,5 +1,5 @@
 function fetchMovieData(search = 'thor', type = 'movie', page = 1){
-    url = `http://www.omdbapi.com/?s=${search}&type=${type}&page=${page}&apikey=dc6b1e5d`
+    url = `https://www.omdbapi.com/?s=${search}&type=${type}&page=${page}&apikey=dc6b1e5d`
     return fetch(url)
     .then((response) => response.json())
     .then((data) => {
@@ -9,7 +9,7 @@ function fetchMovieData(search = 'thor', type = 'movie', page = 1){
 }
 
 function fetchSearchMovieData(id = 'tt3501632'){
-    url = `http://www.omdbapi.com/?i=${id}&apikey=dc6b1e5d`
+    url = `https://www.omdbapi.com/?i=${id}&apikey=dc6b1e5d`
     return fetch(url)
     .then((response) => response.json())
     .then((data) => {
