@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <title>OpenLayers example</title>
+  </head>
+  <body>                      
+    <h2>My Map</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+
+    ol.proj.useGeographic()
+
+    var place = [30.52,50.42]
+    var point = new ol.geom.Point(place)
+
+    var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          }),
+          new ol.layer.Vector({
+            source: new ol.source.Vector({
+                features: [new ol.Feature(point)]
+            }),
+            style: new ol.style.Style({
+            image: new ol.style.Circle({
+                radius: 9,
+                fill: new ol.style.Fill({color: 'red'})
+            }),  
+        }),
+    })
+          
+        ],
+        view: new ol.View({
+          center: place,
+          zoom: 10
+        })
+      });
+      map.on('click', (e) =>{
+          point.setCoordinates(e.coordinate)
+      })
+    </script>
+  </body>
+</html>

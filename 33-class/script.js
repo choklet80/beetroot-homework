@@ -24,7 +24,7 @@ const getEpisodeTemplate = (episode) => `
     ${episode.air_date}
 </div>
 <div class="episode__actions">
-    <button class="btn">Показать всех персонажей</button>
+    <button class="btn">Details</button>
 </div>
 </div>
 `
@@ -61,7 +61,8 @@ function renderNavigation(info){
 
 $('body').on('click', '#app [data-app=nav] button', function(e){
     
-    console.log(1)
+    let page = $(this).text()
+
 })
 
 fetchEpisodeData();

@@ -5,8 +5,8 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #15dba1;
+    font-family: 'Lato', sans-serif;
+    background-color: #292d3e;
 }
 
 .wr{
@@ -15,6 +15,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header{
@@ -25,6 +29,7 @@ body{
 .nav{
     display: flex;
     justify-content: space-around;
+    min-height: 115px;
 }
 
 .nav__link{
@@ -45,34 +50,31 @@ body{
 }
 
 .container{
-    
     max-width: 600px;
     width: 100%;
-    height: 540px;
+    min-height: 541px;
     background-color: #303242;
-
 }
 
 .img{
-    width: 160px;
-    height: 230px;
+    width: 197px;
+    height: 282px;
 }
 
 .main{
     color: white;
     display: flex;
-    padding: 90px 45px;
+    padding: 40px 45px;
 }
 
 .left-content{
-    padding: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .stars{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .stars i{
@@ -83,9 +85,70 @@ body{
 
 .right-content__header{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.circle{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 50%;
 }
 .right-content{
     margin-left: 40px;
-    
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
+
+.right-content__h1{
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.right-content__body{
+    margin-top: 20px;
+}
+
+.right-content-discription{
+    opacity: 0.6;
+    font-weight: 10;
+    font-size: 13px;
+    letter-spacing: 0.7px;
+    line-height: 20px;
+}
+
+.right-content__subtitle{
+    margin-top: 5px;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+
+.right-content__footer{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cost{
+    font-size: 28px;
+}
+.sale{
+    font-size: 12px;
+    color: #fedc3f;
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    background-color: #13e28d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
