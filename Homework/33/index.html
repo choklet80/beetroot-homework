@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Movie</title>
 </head>
 <body>
-    <a style="z-index: 1; font-weight: 600; color: #ab78f2 ;font-family: 'Montserrat', sans-serif; text-decoration: none; position: absolute; top: 18px; left: 45px; font-size: 20px;" href="../index.html">BACK</a>
+    <a style="z-index: 1; font-weight: 600; color: #ab78f2 ;font-family: 'Montserrat', sans-serif; text-decoration: none; position: absolute; top: 5px; left: 5px; font-size: 10px;" href="../index.html">BACK</a>
     <div class="form" id="form">
         <div class="form__header">
-            <h2>Поиск по названию</h2>
+            <p>OMDb Search</p>
         </div>
         <div class="form__body">
             <label class="title">
-                <p>Название:</p> 
+                <p>Name:</p> 
                 <input type="text" name="title" id="title">
             </label>
             <label class="type">
-                <p>Тип:</p> 
+                <p>Type:</p> 
                 <select size="1" id="type">
                     <option value="Movie">Movie</option>
                     <option value="Series">Series</option>
                 </select>
             </label>                
         </div>
-        <button class="btn">Поиск</button>
+        <button class="btn">Search</button>
     </div>
 
     <div id="app">
         <div class="description" data-app = "description">
-
+            
         </div>
         <div class="list" data-app="list">
 
@@ -40,29 +43,6 @@
             
         </div>
     </div>
-    
-    <!-- <div class="desc">
-        <div class="film-main-info">
-
-            <div class="poster">
-                <img src="${film.Poster}" alt="film-poster">
-            </div>
-            <div class="name-data-prod">
-                <h2 class="film__title">
-                    <span class="film__text">
-                        ${film.Title}
-                    </span>
-                </h2>
-                <p class="releas">${film.Released}</p>
-                <p class="genre">Genre:${film.Genre}</p>
-                <p class="director">Director:${film.Director}</p>
-                <p class="actors">Actors:${film.Actors}</p>
-            </div>
-
-        </div>
-        <p class="plot">Plot:${film.Plot}</p>
-    </div> -->
-
     <script
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

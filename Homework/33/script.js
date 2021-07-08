@@ -1,10 +1,14 @@
+
+let searchResult = []
+
 function fetchMovieData(search = 'thor', type = 'movie', page = 1){
     url = `https://www.omdbapi.com/?s=${search}&type=${type}&page=${page}&apikey=dc6b1e5d`
     return fetch(url)
     .then((response) => response.json())
     .then((data) => {
-        renderList(data.Search)
-        renderNavigation(data)
+        // renderList(data.Search)
+        // renderNavigation(data)
+        return data
     })
 }
 
@@ -24,6 +28,8 @@ $('body').on('click', '#form button', function(e){
 
 $('body').on('click', '#app .list button', function(e){
     fetchSearchMovieData(($(this).data('id')))
+    $('.description').css('display', 'block')
+    $('body').css('overflow', 'hidden')
 })
 
 let search_title = ``
@@ -31,37 +37,80 @@ let search_type = ``
 function search(){
     search_title = $('#title').val()
     search_type = $('#type').val()
-    fetchMovieData(search_title, search_type, undefined);
+    fetchMovieData(search_title, search_type, undefined)
+    .then((data) => {
+        searchResult = data.Search
+
+        renderList(searchResult)
+        renderNavigation(data)
+    })
 }
 
 $('body').on('click', '#app .nav button', function(e){
     let page = $(this).text()
-    fetchMovieData(search_title,search_type,page)
+    fetchMovieData(search_title,search_type,page).then((data) => {
+        searchResult = data.Search
+
+        renderList(searchResult)
+    })
 })
 
 $('body').on('click', '#app .description .desc .film-main-info .close', function(e){
     $(".desc").remove();
+    $('.description').css('display', 'none')
+    $('body').css('overflow', 'auto')
 })
+
+$('body').on('click', '#app .list .film .film__info .star', function(e){
+    const id = $(this).data("id");
+
+    let favoriteList = getFavorites();
+  
+    if (favoriteList.includes(id)) {
+      favoriteList = favoriteList.filter((item) => item !== id)
+    } else {
+      favoriteList.push(id);
+    }
+  
+    localStorage.setItem("favorite", favoriteList);
+  
+    renderList(searchResult);
+  
+  
+  
+    console.log(favoriteList);
+})
+
+function getFavorites() {
+    const favoriteItem = localStorage.getItem("favorite");
+  
+    const favoriteList = favoriteItem !== null ? favoriteItem.split(",") : [];
+  
+    return favoriteList;
+  }
+
 
 const getButtonTemplate = (text) => `
     <button class="btn" >${text}</button>
 `
 
-let getFilmTemplate = (film) => `
+let getFilmTemplate = (film, isFavorite) => `
     <div class="film">
         <div class="poster">
             <img src="${film.Poster}" alt="film-poster">
         </div>
-        <h2 class="film__title">
+        <p class="film__title">
             <span class="film__text">
                 ${film.Title}
             </span>
-        </h2>
+        </p>
         <div class="film__air-date">
                 ${film.Year}
         </div>
         <div class="film__info">
             <button class="btn" data-id="${film.imdbID}">Show information</button>
+            <div data-id="${film.imdbID}" class="star 
+            ${isFavorite ? "star--active" : ""}">&#9734</div>
         </div>
     </div>
 `
@@ -74,8 +123,13 @@ function renderList(list){
     
     let listHTML = ``
 
+    const favoriteList = getFavorites();
+
     for(let film of list){
-        listHTML += getFilmTemplate(film)
+        if(film.Poster == 'N/A'){
+            film.Poster = 'no-image-dark.png'
+        }
+        listHTML += getFilmTemplate(film, favoriteList.includes(film.imdbID))
     }
 
     appEl.children('[data-app=list]').html(listHTML)
