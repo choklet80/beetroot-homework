@@ -6,9 +6,13 @@ function fetchMovieData(search = 'thor', type = 'movie', page = 1){
     return fetch(url)
     .then((response) => response.json())
     .then((data) => {
+        
         // renderList(data.Search)
         // renderNavigation(data)
         return data
+    })
+    .catch((error) =>{
+        $('.loader').hide()
     })
 }
 
@@ -18,12 +22,15 @@ function fetchSearchMovieData(id = 'tt3501632'){
     .then((response) => response.json())
     .then((data) => {
         renderDetails(data)
+        
     })
+    
 }
 
 
 $('body').on('click', '#form button', function(e){
     search()
+    $('.loader').show()
 })
 
 $('body').on('click', '#app .list button', function(e){
@@ -40,7 +47,7 @@ function search(){
     fetchMovieData(search_title, search_type, undefined)
     .then((data) => {
         searchResult = data.Search
-
+        $('.loader').hide()
         renderList(searchResult)
         renderNavigation(data)
     })
@@ -133,6 +140,7 @@ function renderList(list){
     }
 
     appEl.children('[data-app=list]').html(listHTML)
+    
 }
 
 function renderNavigation(info){

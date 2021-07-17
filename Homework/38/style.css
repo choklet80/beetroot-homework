@@ -1,0 +1,28 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.container{
+    width: 1700px;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 360px 360px 580px;
+    gap: 50px;
+}
+
+
+.item{
+    outline: 3px solid red;
+}
+
+.item--big{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
