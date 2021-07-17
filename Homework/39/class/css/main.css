@@ -1,10 +1,2 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1 {
-  color: red;
-  font-size: 38px;
-}
+body{margin:0;padding:0;box-sizing:border-box}h1{color:red;font-size:38px}.text{display:-ms-grid;display:grid}::-webkit-input-placeholder{color:gray}::-moz-placeholder{color:gray}:-ms-input-placeholder{color:gray}::-ms-input-placeholder{color:gray}::placeholder{color:gray}
+/*# sourceMappingURL=maps/main.css.map */

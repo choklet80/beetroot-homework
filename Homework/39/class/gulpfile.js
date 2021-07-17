@@ -1,22 +1,31 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const del = require('del');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const autoPrefixer = require('gulp-autoprefixer');
 
-function clean(cb) {
+function cleanStyles() {
 
     console.log('Clean task')
 
-    cb();
+    return del(['css'])
 }
 
 function buildStyles() {
     return gulp.src('./sass/main.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.init())
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(autoprefixer({
+            cascade: false,
+            grid: autoPrefixer
+        }))
+        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./css'));
 };
 
-exports.watch = function(){
-    gulp.watch('./sass/**/*',buildStyles)
+exports.watch = function () {
+    gulp.watch('./sass/**/*', buildStyles)
 }
 
-exports.clean = clean;
-exports.default = buildStyles;
+exports.default = gulp.series(cleanStyles, buildStyles);
